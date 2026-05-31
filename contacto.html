@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contacto y Cotización | ACCESS // VERTICAL SOLUTIONS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Enlaces a CSS y JS organizados en la raíz -->
+    <link href="style.css" rel="stylesheet"/>
+    <script src="theme.js"></script>
+    <script src="tailwind-config.js"></script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container transition-colors duration-300">
+
+    <!-- TopNavBar -->
+    <nav class="bg-surface border-b border-outline-variant sticky top-0 z-50 transition-colors duration-300">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="font-label-mono text-sm md:text-base font-bold tracking-tight uppercase"><span class="text-on-surface">ACCESS</span> <span class="text-primary mx-1">//</span> <span class="text-on-surface-variant font-normal text-xs md:text-sm">SOLUCIONES VERTICALES</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-on-surface-variant font-label-mono text-xs uppercase tracking-wider hover:text-primary transition-colors duration-200" href="index.html">Servicios</a>
+                <a class="text-on-surface-variant font-label-mono text-xs uppercase tracking-wider hover:text-primary transition-colors duration-200" href="nosotros.html">Sobre Nosotros</a>
+                <a class="text-primary font-label-mono text-xs uppercase tracking-wider pb-1 border-b-2 border-primary transition-all duration-200" href="contacto.html">Contacto</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 border border-outline-variant hover:border-primary rounded-DEFAULT hover:text-primary transition-all active:scale-95" title="Alternar tema">
+                    <span id="theme-toggle-icon" class="material-symbols-outlined text-[20px] block">dark_mode</span>
+                </button>
+                
+                <a href="#cotizacion" class="bg-primary-container text-on-primary font-label-mono text-xs font-bold px-5 py-3 rounded-DEFAULT hover:scale-[1.02] active:opacity-95 transition-all">
+                    COTIZAR
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Header -->
+        <header class="relative min-h-[40vh] flex items-end px-margin-mobile md:px-margin-desktop py-16 overflow-hidden bg-surface-container-lowest">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover opacity-50 grayscale-[0.25]" alt="Oficinas en Caracas de noche" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBZkeSZpJ-j-rgy9aGytv-pfEmI6SPbBAVMzBzgndYpPVVfIySAx6g9FeYfQH-jlyTX8ssTUc5TvndJQRihjDuedE37dbEe9XEdLcaDTIUcvHvuqPmHpHqA9wuyJ2qp9iYP7w9nN7mAHAPr-NLmf3aYenstrxngk2q2uR5l-YRiP0fVBp84PokdISjGrasgn1z1Lq3Bc_-AT40QykRytihznuDh9QN7G_XFmdwTSiNfHWVL0p_aceGpLAN7-NLYsDBkmDl99KS8"/>
+                <div class="absolute inset-0 transition-all duration-300" style="background: var(--hero-overlay);"></div>
+            </div>
+            <div class="relative z-10 max-w-container-max mx-auto w-full">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                    <div class="md:col-span-8">
+                        <p class="font-label-mono text-primary text-xs uppercase tracking-widest mb-4 font-semibold">SISTEMA // CANAL_DE_ENLACE</p>
+                        <h1 class="font-display-lg text-3xl md:text-5xl lg:text-6xl text-white font-extrabold uppercase tracking-tight mb-6 leading-none">
+                            ESTABLECE <span class="text-primary">CONTACTO.</span>
+                        </h1>
+                        <p class="font-body-lg text-sm md:text-base max-w-2xl text-on-surface-variant font-light opacity-90">
+                            Centraliza tus requerimientos de altura en nuestro canal técnico. Solicita evaluaciones estructurales, inspecciones de anclajes o una cotización operativa adaptada a tu edificio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Emergency / Storm Hotline Banner -->
+        <section class="bg-error-container text-on-error-container py-6 border-b border-outline-variant transition-colors duration-300">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-on-error-container/10 border border-on-error-container/20 rounded-full flex items-center justify-center animate-pulse">
+                        <span class="material-symbols-outlined text-on-error-container text-xl">warning</span>
+                    </div>
+                    <div>
+                        <h4 class="font-label-mono text-xs uppercase tracking-wider font-bold">Línea Crítica de Emergencia Exterior</h4>
+                        <p class="text-[11px] font-light opacity-90">Soporte 24/7 para desprendimientos de fachadas, roturas por tormentas y riesgos inminentes en altura.</p>
+                    </div>
+                </div>
+                <a href="tel:0800-VERTICAL" class="bg-on-error-container text-error-container font-label-mono text-xs font-bold px-6 py-3 rounded-DEFAULT hover:opacity-95 active:scale-95 transition-all">
+                    0-800-VERTICAL (+58 800-83784225)
+                </a>
+            </div>
+        </section>
+
+        <!-- Office Coordinates & Telemetry Maps -->
+        <section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="mb-16">
+                <p class="font-label-mono text-xs text-primary uppercase tracking-widest mb-3 font-semibold">UBICACIONES // RED_LOGÍSTICA</p>
+                <h2 class="font-headline-lg text-3xl text-on-surface font-extrabold uppercase">Nuestra Sede y Cobertura</h2>
+                <div class="h-1 w-20 bg-primary-container mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- CaracasHQ (Los Chaguaramos) -->
+                <div class="lg:col-span-6 bg-surface-container border border-outline-variant p-8 md:p-10 rounded glow-hover relative overflow-hidden transition-colors duration-300">
+                    <div class="absolute top-4 right-4 font-label-mono text-[9px] text-primary bg-primary/10 px-2 py-1">HQ // SEDE_PRINCIPAL</div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <span class="font-label-mono text-xs text-on-surface-variant block uppercase tracking-widest mb-1">Gran Caracas - Distrito Capital</span>
+                            <h3 class="font-headline-md text-2xl font-bold text-on-surface uppercase">Oficina Principal Caracas</h3>
+                        </div>
+                        
+                        <div class="space-y-3 font-light text-sm text-on-surface-variant">
+                            <p class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl mt-0.5">location_on</span>
+                                <span>Avenida Neverí, Centro Financiero Los Chaguaramos, Los Chaguaramos, Caracas 1041, Distrito Capital, Venezuela.</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl">phone</span>
+                                <a href="tel:+582126930211" class="hover:text-primary transition-colors">+58 (212) 693.0211</a>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl">smartphone</span>
+                                <a href="tel:+584123008080" class="hover:text-primary transition-colors">+58 (412) 300.8080</a>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-xl">mail</span>
+                                <a href="mailto:contacto@accessverticales.com.ve" class="hover:text-primary transition-colors">contacto@accessverticales.com.ve</a>
+                            </p>
+                        </div>
+
+                        <!-- National Coverage Text block -->
+                        <div class="pt-6 border-t border-outline-variant space-y-2">
+                            <h4 class="font-label-mono text-xs text-on-surface font-bold uppercase tracking-wider">Cobertura Nacional</h4>
+                            <p class="text-xs text-on-surface-variant font-light leading-relaxed">
+                                Operamos y movilizamos equipos técnicos certificados en todos los estados del país. Atendemos proyectos de gran envergadura industrial y de infraestructura residencial en las principales ciudades de Venezuela.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Live Integration (Los Chaguaramos, Caracas) -->
+                <div class="lg:col-span-6 bg-surface-container border border-outline-variant p-4 rounded relative overflow-hidden transition-colors duration-300 flex flex-col justify-between">
+                    <div class="flex justify-between items-center mb-4 px-2">
+                        <span class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest">MAPA_DE_LOCALIZACIÓN</span>
+                        <span class="font-label-mono text-[9px] text-outline">LOC // 10.4851° N, 66.8943° W</span>
+                    </div>
+                    
+                    <!-- Styled Google Maps Iframe -->
+                    <div class="w-full h-full min-h-[350px] relative border border-outline-variant rounded overflow-hidden bg-surface-container-low">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.1678129759325!2d-66.89437172551415!3d10.485122189647248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5ec2c6b3e34b%3A0xea80cdfae51bb8fd!2sLos%20Chaguaramos%2C%20Caracas%201041%2C%20Distrito%20Capital!5e0!3m2!1ses!2sve!4v1716310000000!5m2!1ses!2sve"
+                            class="w-full h-full rounded border-0 grayscale opacity-85 contrast-125 dark:invert dark:opacity-75 transition-all duration-300"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <div class="mt-4 text-center">
+                        <a href="https://maps.google.com/?q=Los+Chaguaramos+Caracas" target="_blank" class="inline-flex items-center gap-2 text-xs text-primary font-label-mono hover:underline">
+                            ABRIR EN GOOGLE MAPS <span class="material-symbols-outlined text-xs">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Multi-Step Quote Wizard -->
+        <section id="cotizacion" class="py-24 bg-surface-container-lowest border-t border-b border-outline-variant transition-colors duration-300">
+            <div class="max-w-4xl mx-auto px-margin-mobile md:px-0">
+                <div class="text-center mb-12">
+                    <p class="font-label-mono text-xs text-primary uppercase tracking-widest mb-3 font-semibold">FORMULARIO // OPERACIÓN_DE_COTIZACIÓN</p>
+                    <h2 class="font-headline-lg text-3xl font-extrabold uppercase text-on-surface">Solicitar Cotización Técnica</h2>
+                    <p class="text-on-surface-variant text-sm font-light mt-3 max-w-xl mx-auto">
+                        Completa nuestro formulario estructurado. Evaluaremos las especificaciones de tu fachada y te retornaremos un presupuesto técnico en un plazo máximo de dos semanas.
+                    </p>
+                    <div class="h-1 w-20 bg-primary-container mx-auto mt-4"></div>
+                </div>
+
+                <!-- Wizard Progress Indicator -->
+                <div class="mb-12 border border-outline-variant p-4 bg-surface-container rounded flex justify-between items-center relative overflow-hidden transition-colors duration-300">
+                    <div class="flex items-center gap-4 z-10">
+                        <span id="step-number-hud" class="font-label-mono text-xs font-bold px-3 py-1 bg-primary text-white border border-primary/20">PASO 1 / 4</span>
+                        <span id="step-title-hud" class="font-label-mono text-xs uppercase tracking-wider text-on-surface font-semibold">Ubicación y Propiedad</span>
+                    </div>
+                    <div class="h-1.5 w-32 bg-surface-container-high rounded overflow-hidden z-10">
+                        <div id="step-progress-bar" class="h-full bg-primary-container transition-all duration-500 w-[25%]"></div>
+                    </div>
+                    <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(var(--color-primary) 1.5px, transparent 1.5px); background-size: 8px 8px;"></div>
+                </div>
+
+                <!-- Quote Form -->
+                <form id="quote-wizard-form" class="space-y-8 bg-surface-container border border-outline-variant p-8 md:p-10 rounded transition-colors duration-300">
+                    
+                    <!-- STEP 1: Location & Property -->
+                    <div id="step-1" class="space-y-6">
+                        <h3 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest border-b border-outline-variant pb-2">01 // UBICACIÓN Y ESPECIFICACIONES</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-sede">Estado de Venezuela *</label>
+                                <select id="form-sede" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3" required>
+                                    <option value="">Selecciona el Estado</option>
+                                    <option value="Distrito Capital">Distrito Capital</option>
+                                    <option value="Miranda">Miranda</option>
+                                    <option value="Aragua">Aragua</option>
+                                    <option value="Carabobo">Carabobo</option>
+                                    <option value="Zulia">Zulia</option>
+                                    <option value="Lara">Lara</option>
+                                    <option value="Bolívar">Bolívar</option>
+                                    <option value="Anzoátegui">Anzoátegui</option>
+                                    <option value="Táchira">Táchira</option>
+                                    <option value="Mérida">Mérida</option>
+                                    <option value="Trujillo">Trujillo</option>
+                                    <option value="Falcón">Falcón</option>
+                                    <option value="Yaracuy">Yaracuy</option>
+                                    <option value="Portuguesa">Portuguesa</option>
+                                    <option value="Cojedes">Cojedes</option>
+                                    <option value="Guárico">Guárico</option>
+                                    <option value="Barinas">Barinas</option>
+                                    <option value="Apure">Apure</option>
+                                    <option value="Monagas">Monagas</option>
+                                    <option value="Sucre">Sucre</option>
+                                    <option value="Nueva Esparta">Nueva Esparta</option>
+                                    <option value="La Guaira">La Guaira (Vargas)</option>
+                                    <option value="Delta Amacuro">Delta Amacuro</option>
+                                    <option value="Amazonas">Amazonas</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-tipo-edificio">Tipo de Edificio *</label>
+                                <select id="form-tipo-edificio" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3" required>
+                                    <option value="">Selecciona el tipo de estructura</option>
+                                    <option value="High-rise">Rascacielos (+5 pisos, anclajes instalados)</option>
+                                    <option value="Low-rise">Edificio bajo (menos de 6 pisos, sin anclajes)</option>
+                                    <option value="Townhome">Complejo de casas (Townhomes / Residencial)</option>
+                                    <option value="Other">Estructura Industrial / Otros</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-direccion">Dirección Física Completa y Nombre del Edificio *</label>
+                            <input id="form-direccion" type="text" placeholder="Ej: Centro Comercial Ciudad Tamanaco, Nivel C2, Chuao, Caracas" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4" required/>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Management & Site Contact -->
+                    <div id="step-2" class="space-y-6 hidden">
+                        <h3 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest border-b border-outline-variant pb-2">02 // DATOS DE ADMINISTRACIÓN</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-gestion">Gestión del Edificio *</label>
+                                <select id="form-gestion" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3" required>
+                                    <option value="Company">Junta de Condominio / Administradora</option>
+                                    <option value="Self">Autogestionado por Propietarios</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-nombre-empresa">Nombre de la Administradora o Condominio *</label>
+                                <input id="form-nombre-empresa" type="text" placeholder="Ej: Administradora de Condominios Caracas S.A." class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4" required/>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-nombre-admin">Nombre del Administrador / Persona de Contacto *</label>
+                                <input id="form-nombre-admin" type="text" placeholder="Nombre completo" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4" required/>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-email-admin">Email del Administrador / Representante *</label>
+                                <input id="form-email-admin" type="email" placeholder="email@compañia.com.ve" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4" required/>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-outline-variant">
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-contacto-sitio">Contacto Local en Sitio (Vigilante/Conserje) *</label>
+                                <input id="form-contacto-sitio" type="text" placeholder="Nombre de contacto en sitio (o 'N/A')" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4" required/>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-telefono-sitio">Teléfono del Contacto en Sitio *</label>
+                                <input id="form-telefono-sitio" type="text" placeholder="Número de teléfono móvil o local (o 'N/A')" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: Scope of Work -->
+                    <div id="step-3" class="space-y-6 hidden">
+                        <h3 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest border-b border-outline-variant pb-2">03 // ALCANCE DEL SERVICIO REQUERIDO</h3>
+                        
+                        <p class="text-xs text-on-surface-variant font-light mb-4">
+                            Selecciona todos los servicios aplicables que deseas presupuestar en esta solicitud:
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <label class="flex items-center gap-3 p-4 bg-surface-container-low border border-outline-variant rounded hover:border-primary cursor-pointer transition-colors duration-200">
+                                <input type="checkbox" name="services" value="Window Cleaning" class="rounded-DEFAULT text-primary focus:ring-primary border-outline-variant w-4 h-4 bg-surface-container-lowest"/>
+                                <span class="font-label-mono text-xs text-on-surface">Limpieza de Cristales</span>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 bg-surface-container-low border border-outline-variant rounded hover:border-primary cursor-pointer transition-colors duration-200">
+                                <input type="checkbox" name="services" value="Power Washing" class="rounded-DEFAULT text-primary focus:ring-primary border-outline-variant w-4 h-4 bg-surface-container-lowest"/>
+                                <span class="font-label-mono text-xs text-on-surface">Lavado a Presión</span>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 bg-surface-container-low border border-outline-variant rounded hover:border-primary cursor-pointer transition-colors duration-200">
+                                <input type="checkbox" name="services" value="Advertising Elements" class="rounded-DEFAULT text-primary focus:ring-primary border-outline-variant w-4 h-4 bg-surface-container-lowest"/>
+                                <span class="font-label-mono text-xs text-on-surface">Instalación Publicitaria</span>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 bg-surface-container-low border border-outline-variant rounded hover:border-primary cursor-pointer transition-colors duration-200">
+                                <input type="checkbox" name="services" value="Anchor Inspection" class="rounded-DEFAULT text-primary focus:ring-primary border-outline-variant w-4 h-4 bg-surface-container-lowest"/>
+                                <span class="font-label-mono text-xs text-on-surface">Inspección de Anclajes</span>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 bg-surface-container-low border border-outline-variant rounded hover:border-primary cursor-pointer transition-colors duration-200">
+                                <input type="checkbox" name="services" value="Soft Building Wash" class="rounded-DEFAULT text-primary focus:ring-primary border-outline-variant w-4 h-4 bg-surface-container-lowest"/>
+                                <span class="font-label-mono text-xs text-on-surface">Lavado Suave Exterior (Softwash)</span>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 bg-surface-container-low border border-outline-variant rounded hover:border-primary cursor-pointer transition-colors duration-200">
+                                <input type="checkbox" name="services" value="Anchor Installation" class="rounded-DEFAULT text-primary focus:ring-primary border-outline-variant w-4 h-4 bg-surface-container-lowest"/>
+                                <span class="font-label-mono text-xs text-on-surface">Instalación de Anclajes de Seguridad</span>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 bg-surface-container-low border border-outline-variant rounded hover:border-primary cursor-pointer transition-colors duration-200">
+                                <input type="checkbox" name="services" value="Facade Painting" class="rounded-DEFAULT text-primary focus:ring-primary border-outline-variant w-4 h-4 bg-surface-container-lowest"/>
+                                <span class="font-label-mono text-xs text-on-surface">Pintura de Fachada</span>
+                            </label>
+                            
+                            <label class="flex items-center gap-3 p-4 bg-surface-container-low border border-outline-variant rounded hover:border-primary cursor-pointer transition-colors duration-200">
+                                <input type="checkbox" name="services" value="Facade Cladding" class="rounded-DEFAULT text-primary focus:ring-primary border-outline-variant w-4 h-4 bg-surface-container-lowest"/>
+                                <span class="font-label-mono text-xs text-on-surface">Instalación de Revestimientos</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: Details & Timeline -->
+                    <div id="step-4" class="space-y-6 hidden">
+                        <h3 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest border-b border-outline-variant pb-2">04 // DETALLES Y PLAZOS</h3>
+                        
+                        <div>
+                            <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-detalles-alcance">Detalle Específico del Alcance *</label>
+                            <textarea id="form-detalles-alcance" rows="4" placeholder="Ej: Pintura de fachada oeste afectada por humedad. Instalación de anclajes de seguridad certificados en azotea. Montaje de lona publicitaria de 10x15m." class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4 font-light" required></textarea>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-plazo">Fecha Límite Deseada para la Cotización *</label>
+                                <input id="form-plazo" type="date" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4 font-light" required/>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-email-factura">Email de Facturación / Contabilidad *</label>
+                                <input id="form-email-factura" type="email" placeholder="facturacion@compañia.com.ve" class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4 font-light" required/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-label-mono uppercase tracking-wider text-on-surface mb-2 font-bold" for="form-comentarios">Preguntas o Comentarios Adicionales (Opcional)</label>
+                            <textarea id="form-comentarios" rows="3" placeholder="Ingresa cualquier requerimiento adicional de seguridad, inducción del sitio o cronograma estricto." class="w-full bg-surface-container-low border border-outline-variant text-on-surface rounded-DEFAULT focus:border-primary focus:ring-primary text-xs py-3 px-4 font-light"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- SUCCESS SCREEN (TERMINAL HUD STYLE) -->
+                    <div id="step-success" class="space-y-6 hidden text-center py-12">
+                        <div class="w-20 h-20 bg-primary/10 border border-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="material-symbols-outlined text-primary text-4xl animate-pulse">terminal</span>
+                        </div>
+                        <h3 class="font-headline-md text-2xl font-bold uppercase text-on-surface">CONEXIÓN DE DATOS ESTABLECIDA</h3>
+                        <p class="font-label-mono text-xs text-primary-fixed-dim uppercase tracking-wider">
+                            SISTEMA_OPERATIVO // REGISTRO_RECIBIDO // ID: <span id="form-success-id">ASV-4827-X</span>
+                        </p>
+                        <p class="text-on-surface-variant text-sm font-light max-w-lg mx-auto">
+                            Tu solicitud de cotización técnica ha sido procesada con éxito y transmitida a nuestro equipo de operaciones. Estaremos revisando las especificaciones de fachada en breve.
+                        </p>
+                        <div class="border border-outline-variant bg-surface-container-low p-5 rounded max-w-md mx-auto text-left font-label-mono text-[10px] text-on-surface-variant space-y-1">
+                            <div>> ESTADO: PROCESANDO_ESPECIFICACIONES</div>
+                            <div>> ESTADO / UBICACIÓN: <span id="summary-sede">Caracas</span></div>
+                            <div>> ADMINISTRADOR: <span id="summary-admin">Admin</span></div>
+                            <div>> PLAZO ESTIMADO ESTIMACIÓN: 2 SEMANAS MÁX.</div>
+                        </div>
+                        <button type="button" onclick="resetForm()" class="bg-primary text-white font-label-mono text-xs font-bold px-8 py-4 rounded-DEFAULT hover:scale-[1.02] active:opacity-95 transition-all">
+                            VOLVER A EMPEZAR
+                        </button>
+                    </div>
+
+                    <!-- Wizard Buttons -->
+                    <div id="wizard-navigation-buttons" class="flex justify-between items-center pt-6 border-t border-outline-variant">
+                        <button type="button" id="prev-btn" class="border border-outline-variant text-on-surface font-label-mono text-xs font-bold px-6 py-3 rounded-DEFAULT hover:bg-surface-container-low disabled:opacity-50 disabled:pointer-events-none transition-all" disabled>
+                            ANTERIOR
+                        </button>
+                        
+                        <button type="button" id="next-btn" class="bg-primary text-white font-label-mono text-xs font-bold px-6 py-3 rounded-DEFAULT hover:scale-[1.02] active:opacity-95 transition-all">
+                            SIGUIENTE
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest border-t border-outline-variant transition-colors duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto">
+            <div class="md:col-span-4 space-y-6">
+                <!-- ACCESS Company Name -->
+                <div class="font-label-mono text-base font-bold tracking-tight uppercase"><span class="text-on-surface">ACCESS</span> <span class="text-primary mx-1">//</span> <span class="text-on-surface-variant font-normal text-sm">SOLUCIONES VERTICALES</span></div>
+                <p class="text-on-surface-variant text-xs font-light max-w-xs leading-relaxed">
+                    Lideramos el sector de mantenimiento y acceso por cuerda industrial en Venezuela. Dejamos cada espacio y estructura en mejores condiciones de las que encontramos.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-9 h-9 border border-outline-variant flex items-center justify-center hover:text-primary transition-colors" href="#" title="Web">
+                        <span class="material-symbols-outlined text-[18px]">public</span>
+                    </a>
+                    <a class="w-9 h-9 border border-outline-variant flex items-center justify-center hover:text-primary transition-colors" href="#" title="Email">
+                        <span class="material-symbols-outlined text-[18px]">alternate_email</span>
+                    </a>
+                    <a class="w-9 h-9 border border-outline-variant flex items-center justify-center hover:text-primary transition-colors" href="#" title="Compartir">
+                        <span class="material-symbols-outlined text-[18px]">share</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-2 space-y-4">
+                <h5 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest">Oficinas</h5>
+                <ul class="space-y-3 text-xs text-on-surface-variant font-light">
+                    <li><a class="hover:text-primary transition-colors" href="#">Sede Caracas (Los Chaguaramos)</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Cobertura Nacional</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-3 space-y-4">
+                <h5 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest">Servicios Clave</h5>
+                <ul class="space-y-3 text-xs text-on-surface-variant font-light">
+                    <li><a class="hover:text-primary transition-colors" href="index.html#servicios">Acceso por Cuerda</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html#servicios">Limpieza de Cristales</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html#servicios">Sistemas de Anclaje</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html#servicios">Pintura de Fachadas</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-3 space-y-4">
+                <h5 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest">Estándares</h5>
+                <ul class="space-y-3 text-xs text-on-surface-variant font-light">
+                    <li><a class="hover:text-primary transition-colors" href="nosotros.html">Certificación IRATA</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="nosotros.html">Certificación SPRAT</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="nosotros.html">Políticas de Cero Incidentes</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-span-12 mt-12 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="font-label-mono text-[10px] text-on-surface-variant">
+                    © 2026 ACCESS SOLUCIONES VERTICALES. CMD // SEGURIDAD_PRIMERO
+                </div>
+                <div class="font-label-mono text-[9px] text-outline">
+                    EXCELENCIA_VERTICAL // V1.2.0
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Wizard navigation scripts -->
+    <script>
+        // WIZARD STATE MANAGEMENT
+        let currentStep = 1;
+        const totalSteps = 4;
+        
+        const steps = [
+            document.getElementById('step-1'),
+            document.getElementById('step-2'),
+            document.getElementById('step-3'),
+            document.getElementById('step-4')
+        ];
+        
+        const stepNumberHud = document.getElementById('step-number-hud');
+        const stepTitleHud = document.getElementById('step-title-hud');
+        const stepProgressBar = document.getElementById('step-progress-bar');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const wizardNavButtons = document.getElementById('wizard-navigation-buttons');
+        const stepSuccess = document.getElementById('step-success');
+
+        const stepTitles = [
+            "Ubicación y Propiedad",
+            "Datos de Administración",
+            "Alcance del Trabajo",
+            "Detalles y Plazos"
+        ];
+
+        function updateWizardUI() {
+            // Update HUD text
+            stepNumberHud.textContent = `PASO ${currentStep} / ${totalSteps}`;
+            stepTitleHud.textContent = stepTitles[currentStep - 1];
+            
+            // Update progress bar width
+            const progressPercent = (currentStep / totalSteps) * 100;
+            stepProgressBar.style.width = `${progressPercent}%`;
+
+            // Toggle step visibility
+            steps.forEach((step, idx) => {
+                if (idx === currentStep - 1) {
+                    step.classList.remove('hidden');
+                } else {
+                    step.classList.add('hidden');
+                }
+            });
+
+            // Handle button states
+            if (currentStep === 1) {
+                prevBtn.disabled = true;
+            } else {
+                prevBtn.disabled = false;
+            }
+
+            if (currentStep === totalSteps) {
+                nextBtn.textContent = "ENVIAR SOLICITUD";
+                nextBtn.classList.remove('bg-primary');
+                nextBtn.classList.add('bg-primary-container', 'text-on-primary-container', 'text-white');
+            } else {
+                nextBtn.textContent = "SIGUIENTE";
+                nextBtn.classList.remove('bg-primary-container', 'text-on-primary-container', 'text-white');
+                nextBtn.classList.add('bg-primary', 'text-on-primary');
+            }
+        }
+
+        // Validate fields for the current step
+        function validateCurrentStep() {
+            const currentStepEl = steps[currentStep - 1];
+            const requiredFields = currentStepEl.querySelectorAll('[required]');
+            
+            let allValid = true;
+            requiredFields.forEach(field => {
+                if (!field.value || (field.type === 'checkbox' && !field.checked)) {
+                    allValid = false;
+                    field.classList.add('border-error');
+                    field.classList.remove('border-outline-variant');
+                } else {
+                    field.classList.remove('border-error');
+                    field.classList.add('border-outline-variant');
+                }
+            });
+            return allValid;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (!validateCurrentStep()) {
+                return;
+            }
+
+            if (currentStep < totalSteps) {
+                currentStep++;
+                updateWizardUI();
+            } else {
+                // Final submission
+                submitQuoteForm();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentStep > 1) {
+                currentStep--;
+                updateWizardUI();
+            }
+        });
+
+        function submitQuoteForm() {
+            // Extract some values for the summary screen
+            const sede = document.getElementById('form-sede').value;
+            const admin = document.getElementById('form-nombre-admin').value;
+            
+            document.getElementById('summary-sede').textContent = sede;
+            document.getElementById('summary-admin').textContent = admin;
+            
+            // Generate a random high-tech ID
+            const randomId = "ASV-" + Math.floor(1000 + Math.random() * 9000) + "-" + String.fromCharCode(65 + Math.floor(Math.random() * 26));
+            document.getElementById('form-success-id').textContent = randomId;
+
+            // Hide form steps and navigation buttons
+            steps.forEach(step => step.classList.add('hidden'));
+            wizardNavButtons.classList.add('hidden');
+            
+            // Show success screen
+            stepSuccess.classList.remove('hidden');
+
+            // Scroll up to the form top
+            document.getElementById('cotizacion').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function resetForm() {
+            // Reset form fields
+            document.getElementById('quote-wizard-form').reset();
+            
+            // Show navigation buttons
+            wizardNavButtons.classList.remove('hidden');
+            stepSuccess.classList.add('hidden');
+            
+            // Go back to step 1
+            currentStep = 1;
+            updateWizardUI();
+        }
+    </script>
+</body>
+</html>

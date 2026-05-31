@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sobre Nosotros | ACCESS // VERTICAL SOLUTIONS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Enlaces a CSS y JS organizados en la raíz -->
+    <link href="style.css" rel="stylesheet"/>
+    <script src="theme.js"></script>
+    <script src="tailwind-config.js"></script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container transition-colors duration-300">
+
+    <!-- TopNavBar -->
+    <nav class="bg-surface border-b border-outline-variant sticky top-0 z-50 transition-colors duration-300">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="font-label-mono text-sm md:text-base font-bold tracking-tight uppercase"><span class="text-on-surface">ACCESS</span> <span class="text-primary mx-1">//</span> <span class="text-on-surface-variant font-normal text-xs md:text-sm">SOLUCIONES VERTICALES</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-on-surface-variant font-label-mono text-xs uppercase tracking-wider hover:text-primary transition-colors duration-200" href="index.html">Servicios</a>
+                <a class="text-primary font-label-mono text-xs uppercase tracking-wider pb-1 border-b-2 border-primary transition-all duration-200" href="nosotros.html">Sobre Nosotros</a>
+                <a class="text-on-surface-variant font-label-mono text-xs uppercase tracking-wider hover:text-primary transition-colors duration-200" href="contacto.html">Contacto</a>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 border border-outline-variant hover:border-primary rounded-DEFAULT hover:text-primary transition-all active:scale-95" title="Alternar tema">
+                    <span id="theme-toggle-icon" class="material-symbols-outlined text-[20px] block">dark_mode</span>
+                </button>
+                
+                <a href="contacto.html" class="bg-primary-container text-on-primary font-label-mono text-xs font-bold px-5 py-3 rounded-DEFAULT hover:scale-[1.02] active:opacity-95 transition-all">
+                    COTIZAR
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <header class="relative min-h-[50vh] flex items-end px-margin-mobile md:px-margin-desktop py-20 overflow-hidden bg-surface-container-lowest">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover opacity-60 grayscale-[0.2]" alt="Técnicos de acceso por cuerda suspendidos en rascacielos en Caracas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzwmvqtzHkxNOUGLZyF_i5gZ9P4C5o3EsD86ZsHxe9NNM6oYVVp9IfIGEis6rSxYM67RCqykPiuNA4nYJf0ss7glq_-VktiJgMJ1lvcwthHb9xeArH-cqS4-9eTKdRlgqBRSkAwXunArovRB_OkzjCQLQdi_x9CKkGJcCtXTrdbangVo3JkK1SJVmQ7iJoq1eIagbeZAp7QtlCWd99-1CcgoU5_0x3NA3IFo7LavHQ29FBTA3nEKhCrbqHsdZUQX-lb3-VlYALbPg"/>
+                <div class="absolute inset-0 transition-all duration-300" style="background: var(--hero-overlay);"></div>
+            </div>
+            <div class="relative z-10 max-w-container-max mx-auto w-full">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                    <div class="md:col-span-8">
+                        <p class="font-label-mono text-primary text-xs uppercase tracking-widest mb-4 font-semibold">SISTEMA // PERSPECTIVA_GLOBAL</p>
+                        <h1 class="font-display-lg text-4xl md:text-5xl lg:text-6xl text-white font-extrabold uppercase tracking-tight mb-8 leading-none">
+                            EXCELENCIA EN <br/><span class="text-primary">CADA ASCENSO.</span>
+                        </h1>
+                        <p class="font-body-lg text-sm md:text-base max-w-2xl text-on-surface-variant font-light opacity-90">
+                            Proveemos mantenimiento profesional de edificios en Caracas aportando precisión técnica y seguridad absoluta. No solo protegemos tus estructuras; aseguramos la integridad física del equipo y de la propiedad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mission & Asymmetric Layout -->
+        <section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+                <div class="lg:col-span-5 flex flex-col justify-center space-y-6">
+                    <div class="border-l-4 border-primary pl-6 py-2">
+                        <p class="font-label-mono text-xs text-primary uppercase tracking-wider mb-2 font-semibold">CMD // DECLARACIÓN_DE_MISIÓN</p>
+                        <h2 class="font-headline-lg text-2xl md:text-3xl text-on-surface font-extrabold uppercase leading-tight">Soluciones de Altura para Edificaciones Exigentes</h2>
+                    </div>
+                    <p class="text-on-surface-variant text-sm md:text-base font-light leading-relaxed">
+                        En **Access Soluciones Verticales**, combinamos las técnicas de acceso industrial por cuerdas más avanzadas del mundo con una profunda experiencia en mantenimiento de envolventes y restauración técnica. Nuestra misión es resolver desafíos de altura donde los métodos convencionales fallan.
+                    </p>
+                    <p class="text-on-surface-variant text-sm md:text-base font-light leading-relaxed">
+                        Operando activamente en la Gran Caracas y a nivel nacional, cerramos la brecha entre la rigurosidad industrial y el cuidado meticuloso que exigen los activos corporativos y residenciales premium en Venezuela.
+                    </p>
+                </div>
+                
+                <div class="lg:col-start-7 lg:col-span-6 mt-10 lg:mt-0">
+                    <div class="relative aspect-[4/3] bg-surface-container-low border border-outline-variant overflow-hidden group rounded">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Detalle arquitectónico de edificio moderno bajo el cielo de Caracas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEAspS5LwNz7BzhXzjur6IVsxDHPonNut4pn1Rc3-dkRgRbnjF0LLihiyMbE49UQxa507Y3Ay7Mn2DlDx8-VJsNjFL_Nf93t789LV40sVCmVc3Fv5Dd2IDXDuPFIIAmJHnh-4BlSMUyMY_LB_RPOtwEA8fLmfwf9PawXQdNaYovlIj0iwp9JHQemOLC-eXqcStYtRglfcj4zRRRVJ24eUeKlwkLJgWrtZvb-rvH66-eHbyVJ9M56tcMoqXTAnOVoDuBDftOTa1ND4"/>
+                        <div class="absolute bottom-0 left-0 p-6 w-full bg-gradient-to-t from-surface-container-lowest/80 to-transparent backdrop-blur-[2px]">
+                            <div class="flex flex-wrap items-center gap-4">
+                                <span class="font-label-mono text-[9px] bg-primary text-white px-3 py-1 rounded">COORD // 10.4851° N, 66.8943° W</span>
+                                <span class="font-label-mono text-[9px] border border-primary text-primary px-3 py-1 rounded bg-background/50">OPERACIONES EN CARACAS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid of Values ("The DNA of Excellence") -->
+        <section class="py-24 bg-surface-container-lowest border-t border-b border-outline-variant transition-colors duration-300">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+                    <div>
+                        <p class="font-label-mono text-xs text-primary uppercase tracking-widest mb-3 font-semibold">CÓDIGO // OPERACIONAL</p>
+                        <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface font-extrabold uppercase">El ADN de la Excelencia</h2>
+                        <div class="h-1 w-20 bg-primary-container mt-4"></div>
+                    </div>
+                    <div class="text-on-surface-variant text-sm md:text-base font-light max-w-md">
+                        Nuestros valores fundamentales no son solo textos en una pared; son las líneas de seguridad redundantes que salvan vidas y garantizan resultados óptimos cada día.
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                    <!-- Value 1: Safety First -->
+                    <div class="md:col-span-8 bg-surface-container p-8 md:p-10 border border-outline-variant rounded hover:border-primary transition-colors group duration-300">
+                        <div class="mb-10 flex justify-between items-start">
+                            <div class="w-14 h-14 bg-primary/10 rounded flex items-center justify-center border border-primary/20">
+                                <span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">shield</span>
+                            </div>
+                            <span class="font-label-mono text-on-surface-variant opacity-25 text-3xl font-bold">01</span>
+                        </div>
+                        <h3 class="font-headline-md text-xl md:text-2xl font-bold text-on-surface mb-3">Seguridad Ante Todo</h3>
+                        <p class="text-on-surface-variant text-xs md:text-sm font-light leading-relaxed">
+                            Es la base absoluta de cada movimiento táctico. Nos alineamos bajo las normativas más rigurosas de la industria (IRATA/SPRAT). Planificamos cada descenso con redundancia física absoluta. Logramos una cultura de cero incidentes protegiendo a nuestro equipo y a tu inversión.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 2: Team Players -->
+                    <div class="md:col-span-4 bg-surface-container p-8 border border-outline-variant rounded hover:border-primary transition-colors group duration-300">
+                        <div class="mb-10 flex justify-between items-start">
+                            <div class="w-14 h-14 bg-primary/10 rounded flex items-center justify-center border border-primary/20">
+                                <span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">groups</span>
+                            </div>
+                            <span class="font-label-mono text-on-surface-variant opacity-25 text-3xl font-bold">02</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg md:text-xl font-bold text-on-surface mb-3">Trabajo en Equipo</h3>
+                        <p class="text-on-surface-variant text-xs font-light leading-relaxed">
+                            El trabajo vertical de alto riesgo requiere confianza mutua absoluta. Operamos como una unidad coordinada con telemetría y comunicación constante en tiempo real.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 3: Accountability -->
+                    <div class="md:col-span-4 bg-surface-container p-8 border border-outline-variant rounded hover:border-primary transition-colors group duration-300">
+                        <div class="mb-10 flex justify-between items-start">
+                            <div class="w-14 h-14 bg-primary/10 rounded flex items-center justify-center border border-primary/20">
+                                <span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">verified_user</span>
+                            </div>
+                            <span class="font-label-mono text-on-surface-variant opacity-25 text-3xl font-bold">03</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg md:text-xl font-bold text-on-surface mb-3">Responsabilidad</h3>
+                        <p class="text-on-surface-variant text-xs font-light leading-relaxed">
+                            Asumimos total propiedad de nuestros resultados y cronogramas. Proveemos transparencia absoluta a través de reportes técnicos auditables, fotográficos y de ingeniería.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 4: Growth Mindset -->
+                    <div class="md:col-span-8 bg-surface border border-primary p-8 md:p-10 rounded flex flex-col lg:flex-row items-center gap-8 relative overflow-hidden transition-colors duration-300">
+                        <div class="lg:w-1/2 space-y-4 relative z-10">
+                            <span class="font-label-mono text-[9px] text-primary bg-primary/10 px-2.5 py-1 uppercase font-bold">CMD // CAPACITACIÓN_CONTINUA</span>
+                            <h3 class="font-headline-md text-xl md:text-2xl font-bold text-on-surface">Mentalidad de Crecimiento</h3>
+                            <p class="text-on-surface-variant text-xs md:text-sm font-light leading-relaxed">
+                                La arquitectura y los materiales de envolvente evolucionan, y nosotros también. Invertimos constantemente en tecnologías de última generación, software de telemetría estructural y entrenamiento recurrente del personal técnico.
+                            </p>
+                            <div class="flex gap-4 pt-2">
+                                <div class="flex flex-col">
+                                    <span class="font-headline-sm text-primary font-bold text-lg md:text-xl">100%</span>
+                                    <span class="font-label-mono text-[9px] text-on-surface-variant">TÉCNICOS CERTIFICADOS</span>
+                                </div>
+                                <div class="w-px h-10 bg-outline-variant"></div>
+                                <div class="flex flex-col">
+                                    <span class="font-headline-sm text-primary font-bold text-lg md:text-xl">50K+</span>
+                                    <span class="font-label-mono text-[9px] text-on-surface-variant">DESCENSOS COMPLETADOS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2 h-48 lg:h-full relative border border-outline-variant shrink-0 rounded overflow-hidden">
+                            <img class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" alt="Técnicos reunidos en torno a planos de ingeniería" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKEncXnujUZ-yF9P6pEcBixjU1N3PSK9TAtlQ933sdQWWi36dCpuyvi8J7bZbDRz6V_aBtk4ErbJtx9iZkmRiW_ejYrAjE0U5Y-EoxIrP0qht19aKDuOrLX8Iki44vdd7TN57fck85lLGR2DexbcjPD-z_oEDq2FhJ61CpQysGMiTiApoa94IQAMe16TtPu0t_0zj1sJob_w1TkilLuCCeNOr2faw5SY0DrEtmABkTOs4LtFEKF5vSp40GcAL_p_xetLJGGv_OPRM"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface font-extrabold uppercase">Acreditación Técnica Global</h2>
+                    <p class="font-body-lg text-sm md:text-base text-on-surface-variant font-light">
+                        No operamos en base a estimaciones; nuestro trabajo vertical sigue al pie de la letra los códigos de ingeniería en altura más estrictos del planeta. Todo nuestro equipo cuenta con certificaciones al día de los organismos reguladores internacionales.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-6 p-5 bg-surface-container border-l-4 border-primary rounded transition-colors duration-300">
+                            <div class="p-3 bg-primary/15 rounded">
+                                <span class="material-symbols-outlined text-primary">verified_user</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-mono text-sm text-on-surface font-bold">IRATA INTERNATIONAL</h4>
+                                <p class="text-on-surface-variant text-xs font-light mt-1">Industrial Rope Access Trade Association. El máximo estándar global en seguridad.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6 p-5 bg-surface-container border-l-4 border-safety-teal rounded transition-colors duration-300">
+                            <div class="p-3 bg-safety-teal/15 rounded">
+                                <span class="material-symbols-outlined text-safety-teal">military_tech</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-mono text-sm text-on-surface font-bold">SPRAT CERTIFICATION</h4>
+                                <p class="text-on-surface-variant text-xs font-light mt-1">Society of Professional Rope Access Technicians. Directrices normativas internacionales en América.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-start-8 lg:col-span-5 relative mt-10 lg:mt-0">
+                    <div class="absolute -top-4 -left-4 w-20 h-20 border-t-2 border-l-2 border-primary z-0"></div>
+                    <div class="absolute -bottom-4 -right-4 w-20 h-20 border-b-2 border-r-2 border-primary z-0"></div>
+                    <div class="relative z-10 rounded overflow-hidden border border-outline-variant shadow-lg">
+                        <img class="w-full aspect-[3/4] object-cover grayscale-[0.2]" alt="Técnico inspeccionando de cerca mosquetones y arnés de seguridad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuF604-OPifH7F4DnXuO_EqSTthrEIzLMUuZl60ekMgnlC3V_avxCOfjhrm3bQ_gd5Z-gLdikyKTyGE8B7BoQ30LnOsy6NQJw7C50dQICFjpuBXVAn8LjFj12PZrfqMeq6Uq5a0h-rqzOW_62XEm8D0GZ3i4LAs5PuEpchUxHgeqM0e2HxF-D6adXNPGuNz05500hIDimP3kDirNWT0WvWE0sr6bBnzJOXHsa1aAfoD_Y_5_WyfZN7RLWK6hZVwG7I36dY2QKnlJ8"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-primary text-white">
+            <div class="max-w-container-max mx-auto text-center px-margin-mobile md:px-margin-desktop">
+                <p class="font-label-mono text-xs uppercase tracking-widest font-bold mb-4">¿LISTO PARA COMENZAR EL PROCESO?</p>
+                <h2 class="font-headline-lg text-2xl md:text-4xl lg:text-5xl font-extrabold uppercase mb-10 tracking-tight">PROTEGE LA INTEGRIDAD DE TU ACTIVO HOY</h2>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="contacto.html" class="bg-white text-primary font-label-mono text-xs font-bold px-10 py-5 rounded-DEFAULT hover:scale-[1.03] transition-all">
+                        OBTENER COTIZACIÓN TÉCNICA
+                    </a>
+                    <a href="index.html#servicios" class="border-2 border-white text-white font-label-mono text-xs font-bold px-10 py-5 rounded-DEFAULT hover:bg-white hover:text-primary transition-all">
+                        VER TODOS LOS SERVICIOS
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest border-t border-outline-variant transition-colors duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto">
+            <div class="md:col-span-4 space-y-6">
+                <!-- ACCESS Company Name -->
+                <div class="font-label-mono text-base font-bold tracking-tight uppercase"><span class="text-on-surface">ACCESS</span> <span class="text-primary mx-1">//</span> <span class="text-on-surface-variant font-normal text-sm">SOLUCIONES VERTICALES</span></div>
+                <p class="text-on-surface-variant text-xs font-light max-w-xs leading-relaxed">
+                    Lideramos el sector de mantenimiento y acceso por cuerda industrial en Venezuela. Dejamos cada espacio y estructura en mejores condiciones de las que encontramos.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-9 h-9 border border-outline-variant flex items-center justify-center hover:text-primary transition-colors" href="#" title="Web">
+                        <span class="material-symbols-outlined text-[18px]">public</span>
+                    </a>
+                    <a class="w-9 h-9 border border-outline-variant flex items-center justify-center hover:text-primary transition-colors" href="#" title="Email">
+                        <span class="material-symbols-outlined text-[18px]">alternate_email</span>
+                    </a>
+                    <a class="w-9 h-9 border border-outline-variant flex items-center justify-center hover:text-primary transition-colors" href="#" title="Compartir">
+                        <span class="material-symbols-outlined text-[18px]">share</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-2 space-y-4">
+                <h5 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest">Oficinas</h5>
+                <ul class="space-y-3 text-xs text-on-surface-variant font-light">
+                    <li><a class="hover:text-primary transition-colors" href="#">Sede Caracas (Los Chaguaramos)</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Cobertura Nacional</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-3 space-y-4">
+                <h5 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest">Servicios Clave</h5>
+                <ul class="space-y-3 text-xs text-on-surface-variant font-light">
+                    <li><a class="hover:text-primary transition-colors" href="index.html#servicios">Acceso por Cuerda</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html#servicios">Limpieza de Cristales</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html#servicios">Sistemas de Anclaje</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="index.html#servicios">Pintura de Fachadas</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-3 space-y-4">
+                <h5 class="font-label-mono text-xs text-primary uppercase font-bold tracking-widest">Estándares</h5>
+                <ul class="space-y-3 text-xs text-on-surface-variant font-light">
+                    <li><a class="hover:text-primary transition-colors" href="nosotros.html">Certificación IRATA</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="nosotros.html">Certificación SPRAT</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="nosotros.html">Políticas de Cero Incidentes</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-span-12 mt-12 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="font-label-mono text-[10px] text-on-surface-variant">
+                    © 2026 ACCESS SOLUCIONES VERTICALES. CMD // SEGURIDAD_PRIMERO
+                </div>
+                <div class="font-label-mono text-[9px] text-outline">
+                    EXCELENCIA_VERTICAL // V1.2.0
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

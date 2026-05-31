@@ -1,0 +1,114 @@
+/* ==========================================================================
+   ACCESS // VERTICAL SOLUTIONS - Estilos Globales
+   ========================================================================== */
+
+/* Variables de color de la marca (basadas en la paleta Stitch Turquoise #00afaa) */
+:root {
+    /* Tema Claro (Vertical Apex Light) */
+    --color-background: #f8f9fb;
+    --color-surface: #f8f9fb;
+    --color-surface-dim: #d8dadc;
+    --color-surface-bright: #f8f9fb;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f2f4f6;
+    --color-surface-container: #eceef0;
+    --color-surface-container-high: #e6e8ea;
+    --color-surface-container-highest: #e0e3e5;
+    --color-on-surface: #191c1e;
+    --color-on-surface-variant: #3b4a44;
+    --color-inverse-surface: #2d3133;
+    --color-inverse-on-surface: #eff1f3;
+    --color-outline: #6b7b74;
+    --color-outline-variant: #b9cac3;
+    
+    --color-primary: #00afaa; /* Brand Turquoise */
+    --color-on-primary: #ffffff;
+    --color-primary-container: #00afaa;
+    --color-on-primary-container: #ffffff;
+    --color-primary-fixed: #00afaa;
+    --color-primary-fixed-dim: #009999;
+    
+    --color-secondary: #585e6c;
+    --color-on-secondary: #ffffff;
+    --color-secondary-container: #dde2f3;
+    --color-on-secondary-container: #5e6473;
+    
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #93000a;
+    
+    --color-safety-teal: #00afaa;
+    --hero-overlay: linear-gradient(rgba(25, 28, 30, 0.75), rgba(25, 28, 30, 0.45));
+}
+
+.dark {
+    /* Tema Oscuro (Vertical Apex) */
+    --color-background: #111318;
+    --color-surface: #111318;
+    --color-surface-dim: #111318;
+    --color-surface-bright: #37393e;
+    --color-surface-container-lowest: #0c0e12;
+    --color-surface-container-low: #1a1c20;
+    --color-surface-container: #1e2024;
+    --color-surface-container-high: #282a2e;
+    --color-surface-container-highest: #333539;
+    --color-on-surface: #e2e2e8;
+    --color-on-surface-variant: #b9cac3;
+    --color-inverse-surface: #e2e2e8;
+    --color-inverse-on-surface: #2f3035;
+    --color-outline: #84948d;
+    --color-outline-variant: #3b4a44;
+    
+    --color-primary: #00afaa; /* Brand Turquoise */
+    --color-on-primary: #ffffff;
+    --color-primary-container: #00afaa;
+    --color-on-primary-container: #0c0e12;
+    --color-primary-fixed: #00afaa;
+    --color-primary-fixed-dim: #009999;
+    
+    --color-secondary: #a5caf1;
+    --on-secondary: #043353;
+    --color-secondary-container: #23496b;
+    --color-on-secondary-container: #94b9df;
+    
+    --color-error: #ffb4ab;
+    --color-on-error: #690005;
+    --color-error-container: #93000a;
+    --color-on-error-container: #ffdad6;
+    
+    --color-safety-teal: #00afaa;
+    --hero-overlay: linear-gradient(to right, rgba(17, 19, 24, 0.95) 30%, rgba(17, 19, 24, 0.45) 100%);
+}
+
+/* Estilos de Cuerpo y Tipografías */
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Efectos y Animaciones */
+/* Efecto de brillo HUD en hover con el color de la marca */
+.glow-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glow-hover:hover {
+    box-shadow: 0 0 25px rgba(0, 175, 170, 0.15);
+    border-color: var(--color-primary-container);
+    transform: translateY(-4px);
+}
+
+/* Ocultar barra de desplazamiento */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;  /* Firefox */
+}
